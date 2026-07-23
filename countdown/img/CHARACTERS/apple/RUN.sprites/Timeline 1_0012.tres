@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" format=3 uid="uid://ivtnhg1evuug"]
+
+[ext_resource type="Texture2D" uid="uid://opuj5jdscvu2" path="res://img/CHARACTERS/apple/RUN-1.png" id="1_my6jx"]
+
+[resource]
+atlas = ExtResource("1_my6jx")
+region = Rect2(1, 133, 64, 64)

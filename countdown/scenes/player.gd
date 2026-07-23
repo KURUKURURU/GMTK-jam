@@ -5,11 +5,11 @@ extends CharacterBody2D
 
 var SPEED := 300.0
 const WALK_SPEED = 300.0
-const RUN_SPEED = 400.0
+const RUN_SPEED = 500.0
 const JUMP_VELOCITY = -400.0
 
 # Slide variables
-const SLIDE_BOOST = 600.0      # Starting burst of speed for the slide
+const SLIDE_BOOST = 800.0      # Starting burst of speed for the slide
 var is_sliding := false
 var slide_timer := 0.0
 const SLIDE_DURATION = 1.0 # How long the slide lasts in seconds
@@ -36,8 +36,12 @@ func _physics_process(delta: float) -> void:
 	if not is_sliding:
 		if Input.is_action_pressed("shift"):
 			SPEED = RUN_SPEED
+			animation.speed_scale = 1.5
+			steps.pitch_scale = 1.0
 		else:
 			SPEED = WALK_SPEED
+			animation.speed_scale = 1.0
+			steps.pitch_scale = 0.7
 
 	var direction := Input.get_axis("left", "right")
 

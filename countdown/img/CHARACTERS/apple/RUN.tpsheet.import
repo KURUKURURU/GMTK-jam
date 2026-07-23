@@ -1,0 +1,16 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+uid="uid://bqaqqv0h265dn"
+path="res://.godot/imported/RUN.tpsheet-6618d9905b316233c270569bbecf4381.res"
+
+[deps]
+
+files=["res://img/CHARACTERS/apple/RUN.sprites/Timeline 1_0000.tres", "res://img/CHARACTERS/apple/RUN.sprites/Timeline 1_0002.tres", "res://img/CHARACTERS/apple/RUN.sprites/Timeline 1_0004.tres", "res://img/CHARACTERS/apple/RUN.sprites/Timeline 1_0006.tres", "res://img/CHARACTERS/apple/RUN.sprites/Timeline 1_0008.tres", "res://img/CHARACTERS/apple/RUN.sprites/Timeline 1_0010.tres", "res://img/CHARACTERS/apple/RUN.sprites/Timeline 1_0012.tres", "res://img/CHARACTERS/apple/RUN.sprites/Timeline 1_0014.tres", "res://img/CHARACTERS/apple/RUN.sprites/Timeline 1_0016.tres"]
+
+source_file="res://img/CHARACTERS/apple/RUN.tpsheet"
+dest_files=["res://.godot/imported/RUN.tpsheet-6618d9905b316233c270569bbecf4381.res", "res://img/CHARACTERS/apple/RUN.sprites/Timeline 1_0000.tres", "res://img/CHARACTERS/apple/RUN.sprites/Timeline 1_0002.tres", "res://img/CHARACTERS/apple/RUN.sprites/Timeline 1_0004.tres", "res://img/CHARACTERS/apple/RUN.sprites/Timeline 1_0006.tres", "res://img/CHARACTERS/apple/RUN.sprites/Timeline 1_0008.tres", "res://img/CHARACTERS/apple/RUN.sprites/Timeline 1_0010.tres", "res://img/CHARACTERS/apple/RUN.sprites/Timeline 1_0012.tres", "res://img/CHARACTERS/apple/RUN.sprites/Timeline 1_0014.tres", "res://img/CHARACTERS/apple/RUN.sprites/Timeline 1_0016.tres"]
+
+[params]
+

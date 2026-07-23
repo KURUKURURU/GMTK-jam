@@ -1,0 +1,16 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+uid="uid://be4tg1wcdbdhi"
+path="res://.godot/imported/SLIDE.tpsheet-90964c521f94d898af64eed5b75232a9.res"
+
+[deps]
+
+files=["res://img/CHARACTERS/apple/SLIDE.sprites/Timeline 1_0000.tres", "res://img/CHARACTERS/apple/SLIDE.sprites/Timeline 1_0001.tres", "res://img/CHARACTERS/apple/SLIDE.sprites/Timeline 1_0002.tres"]
+
+source_file="res://img/CHARACTERS/apple/SLIDE.tpsheet"
+dest_files=["res://.godot/imported/SLIDE.tpsheet-90964c521f94d898af64eed5b75232a9.res", "res://img/CHARACTERS/apple/SLIDE.sprites/Timeline 1_0000.tres", "res://img/CHARACTERS/apple/SLIDE.sprites/Timeline 1_0001.tres", "res://img/CHARACTERS/apple/SLIDE.sprites/Timeline 1_0002.tres"]
+
+[params]
+

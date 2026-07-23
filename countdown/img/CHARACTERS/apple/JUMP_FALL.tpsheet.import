@@ -1,0 +1,16 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+uid="uid://jsjb82kxsbph"
+path="res://.godot/imported/JUMP_FALL.tpsheet-33a36788c9603f607fdbbb0f88085142.res"
+
+[deps]
+
+files=["res://img/CHARACTERS/apple/JUMP_FALL.sprites/Timeline 1_0000.tres", "res://img/CHARACTERS/apple/JUMP_FALL.sprites/Timeline 1_0001.tres", "res://img/CHARACTERS/apple/JUMP_FALL.sprites/Timeline 1_0002.tres", "res://img/CHARACTERS/apple/JUMP_FALL.sprites/Timeline 1_0003.tres", "res://img/CHARACTERS/apple/JUMP_FALL.sprites/Timeline 1_0004.tres", "res://img/CHARACTERS/apple/JUMP_FALL.sprites/Timeline 1_0005.tres", "res://img/CHARACTERS/apple/JUMP_FALL.sprites/Timeline 1_0006.tres"]
+
+source_file="res://img/CHARACTERS/apple/JUMP_FALL.tpsheet"
+dest_files=["res://.godot/imported/JUMP_FALL.tpsheet-33a36788c9603f607fdbbb0f88085142.res", "res://img/CHARACTERS/apple/JUMP_FALL.sprites/Timeline 1_0000.tres", "res://img/CHARACTERS/apple/JUMP_FALL.sprites/Timeline 1_0001.tres", "res://img/CHARACTERS/apple/JUMP_FALL.sprites/Timeline 1_0002.tres", "res://img/CHARACTERS/apple/JUMP_FALL.sprites/Timeline 1_0003.tres", "res://img/CHARACTERS/apple/JUMP_FALL.sprites/Timeline 1_0004.tres", "res://img/CHARACTERS/apple/JUMP_FALL.sprites/Timeline 1_0005.tres", "res://img/CHARACTERS/apple/JUMP_FALL.sprites/Timeline 1_0006.tres"]
+
+[params]
+

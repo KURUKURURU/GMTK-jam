@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" format=3 uid="uid://blx2gil2wb5qm"]
+
+[ext_resource type="Texture2D" uid="uid://bia7hp7g4trmu" path="res://img/CHARACTERS/apple/JUMP_FALL-0.png" id="1_gyfkt"]
+
+[resource]
+atlas = ExtResource("1_gyfkt")
+region = Rect2(0, 0, 64, 64)

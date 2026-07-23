@@ -6,10 +6,14 @@
 [ext_resource type="PackedScene" uid="uid://cxyjhliuu3400" path="res://scenes/player.tscn" id="1_jolhp"]
 [ext_resource type="Texture2D" uid="uid://b4ovyi2adnpl6" path="res://img/tileset/2/Day/2.png" id="2_leqrd"]
 [ext_resource type="Texture2D" uid="uid://cguhvg4dpt3qg" path="res://img/tileset/2/Day/3.png" id="3_0kw8b"]
+[ext_resource type="PackedScene" uid="uid://3701rcla4520" path="res://scenes/firework.tscn" id="3_sf4er"]
 [ext_resource type="Texture2D" uid="uid://dr1tq206ktj3h" path="res://img/tileset/2/Night/4.png" id="4_dpnyc"]
 [ext_resource type="Texture2D" uid="uid://cbygbdtetnpk1" path="res://img/tileset/2/Night/5.png" id="5_2fprk"]
 [ext_resource type="Script" uid="uid://7f1d467og1qs" path="res://scenes/camera_2d.gd" id="7_leqrd"]
+[ext_resource type="AudioStream" uid="uid://075rtd4i6142" path="res://sfx/second.wav" id="8_pasw1"]
+[ext_resource type="AudioStream" uid="uid://lblvu4kaiqwt" path="res://sfx/action_seth_ms.wav" id="8_uhmcg"]
 [ext_resource type="Texture2D" uid="uid://d3dwrovrq3ewo" path="res://img/tileset/20mb.png" id="9_0kw8b"]
+[ext_resource type="AudioStream" uid="uid://dwm1gd3dlvfyn" path="res://sfx/fireworks_bgnoise.wav" id="9_yejta"]
 [ext_resource type="PackedScene" uid="uid://cbqxeuwcebbk8" path="res://scenes/fragile_box.tscn" id="10_2fprk"]
 
 [node name="CityLevel" type="Node2D" unique_id=1847495766]
@@ -24,13 +28,18 @@ repeat_size = Vector2(643.575, 0)
 repeat_times = 2
 
 [node name="1" type="Sprite2D" parent="Background/ParallaxBackground" unique_id=572020881]
+self_modulate = Color(0.03521989, 0.03521989, 0.03521989, 1)
 position = Vector2(317.74304, 179.98045)
 scale = Vector2(1.1171633, 1.1171633)
 texture = ExtResource("1_duytb")
 
+[node name="Firework" parent="Background/ParallaxBackground/1" unique_id=1350121637 instance=ExtResource("3_sf4er")]
+position = Vector2(0, 28.661486)
+scale = Vector2(0.60211885, 0.60211885)
+
 [node name="ParallaxBackground2" type="Parallax2D" parent="Background" unique_id=1152384062]
 scroll_scale = Vector2(0.6, 0.6)
-scroll_offset = Vector2(0, 22)
+scroll_offset = Vector2(0, 166)
 repeat_size = Vector2(643.575, 0)
 repeat_times = 2
 
@@ -41,7 +50,7 @@ texture = ExtResource("2_leqrd")
 
 [node name="ParallaxBackground3" type="Parallax2D" parent="Background" unique_id=179018007]
 scroll_scale = Vector2(0.7, 0.7)
-scroll_offset = Vector2(0, 22)
+scroll_offset = Vector2(0, 166)
 repeat_size = Vector2(643.575, 0)
 repeat_times = 2
 
@@ -59,6 +68,19 @@ texture = ExtResource("4_dpnyc")
 position = Vector2(317.74304, 179.98045)
 scale = Vector2(1.1171633, 1.1171633)
 texture = ExtResource("5_2fprk")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Background" unique_id=562931830]
+stream = ExtResource("8_uhmcg")
+autoplay = true
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="Background" unique_id=1827053633]
+stream = ExtResource("9_yejta")
+autoplay = true
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="Background" unique_id=1696943071]
+stream = ExtResource("8_pasw1")
+volume_db = -27.368
+pitch_scale = 0.55
 
 [node name="Entities" type="Node2D" parent="." unique_id=1244429250]
 
@@ -88,7 +110,7 @@ position = Vector2(754, 286)
 scale = Vector2(1.9062059, 1.9062059)
 player = NodePath("../../Entities/player")
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=105395648]
+[node name="lag" type="TextureRect" parent="." unique_id=105395648]
 offset_left = -1999.0
 offset_top = -96.0
 offset_right = -999.0

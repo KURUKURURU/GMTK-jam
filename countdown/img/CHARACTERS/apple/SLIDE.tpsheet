@@ -1,0 +1,63 @@
+{
+	"textures": [
+		{
+			"image": "SLIDE-0.png",
+			"size": {
+				"w": 192,
+				"h": 64
+			},
+			"sprites": [
+				{
+					"filename": "Timeline 1_0000.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Timeline 1_0001.png",
+					"region": {
+						"x": 64,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Timeline 1_0002.png",
+					"region": {
+						"x": 128,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:37c71a33c2789df5d01f602dfcc4d614:b59e76edccf29d9b2f7365818e89f36b:1dbff4be19d7b0317a5e7cabb1bbfe6b$"
+	}
+}
