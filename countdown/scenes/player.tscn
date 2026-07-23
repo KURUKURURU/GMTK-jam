@@ -1,12 +1,14 @@
 [gd_scene format=3 uid="uid://cxyjhliuu3400"]
 
 [ext_resource type="Script" uid="uid://bef3cjevk3leh" path="res://scenes/player.gd" id="1_qhqgy"]
+[ext_resource type="Texture2D" uid="uid://cr821pprorihe" path="res://img/CHARACTERS/apple/DEAD.png" id="2_a38lo"]
 [ext_resource type="Texture2D" uid="uid://b3sotepsawxnk" path="res://img/CHARACTERS/apple/JUMP_FALL.sprites/Timeline 1_0005.tres" id="2_i4ail"]
 [ext_resource type="Texture2D" uid="uid://bwjpvvf4be116" path="res://img/CHARACTERS/apple/JUMP_FALL.sprites/Timeline 1_0006.tres" id="3_a38lo"]
 [ext_resource type="Texture2D" uid="uid://dwr3mxj6hpb38" path="res://img/CHARACTERS/apple/RUN.sprites/Timeline 1_0000.tres" id="3_jej6c"]
 [ext_resource type="AudioStream" uid="uid://dedi128b03ja" path="res://sfx/step.wav" id="4_dqkch"]
 [ext_resource type="Texture2D" uid="uid://buraatptevx07" path="res://img/CHARACTERS/apple/RUN.sprites/Timeline 1_0002.tres" id="4_f1ej7"]
 [ext_resource type="Texture2D" uid="uid://blx2gil2wb5qm" path="res://img/CHARACTERS/apple/JUMP_FALL.sprites/Timeline 1_0000.tres" id="5_4ni07"]
+[ext_resource type="Texture2D" uid="uid://dkstdqgstra0m" path="res://img/CHARACTERS/apple/FLAIL.png" id="5_l71n6"]
 [ext_resource type="Texture2D" uid="uid://d0y1wbn7462jw" path="res://img/CHARACTERS/apple/RUN.sprites/Timeline 1_0004.tres" id="5_oprun"]
 [ext_resource type="Texture2D" uid="uid://cqfe61wqafnnv" path="res://img/CHARACTERS/apple/RUN.sprites/Timeline 1_0006.tres" id="6_a8ls1"]
 [ext_resource type="Texture2D" uid="uid://bkp0ti35ij1t8" path="res://img/CHARACTERS/apple/JUMP_FALL.sprites/Timeline 1_0001.tres" id="6_l71n6"]
@@ -26,6 +28,14 @@
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("2_a38lo")
+}],
+"loop": 1,
+"name": &"dead",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("2_i4ail")
 }, {
 "duration": 1.0,
@@ -33,6 +43,14 @@ animations = [{
 }],
 "loop": 0,
 "name": &"fall",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_l71n6")
+}],
+"loop": 1,
+"name": &"flail",
 "speed": 5.0
 }, {
 "frames": [{
@@ -117,7 +135,7 @@ script = ExtResource("1_qhqgy")
 position = Vector2(2, 11)
 scale = Vector2(1.2951066, 1.2951066)
 sprite_frames = SubResource("SpriteFrames_rxf60")
-animation = &"fall"
+animation = &"flail"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1557100957]
 position = Vector2(3, 12)

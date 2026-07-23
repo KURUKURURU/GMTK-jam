@@ -25,6 +25,10 @@ shape = SubResource("RectangleShape2D_rxf60")
 
 [node name="break" type="AudioStreamPlayer2D" parent="." unique_id=519974647]
 stream = ExtResource("3_ln0mq")
+volume_db = 7.704
+max_distance = 315.0
+attenuation = 3.6050048
+panning_strength = 3.0
 
 [node name="Area2D" type="Area2D" parent="." unique_id=415245414]
 

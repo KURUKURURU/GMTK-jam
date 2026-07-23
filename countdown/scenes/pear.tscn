@@ -1,0 +1,372 @@
+[gd_scene format=3 uid="uid://bbr4vpey20bhe"]
+
+[ext_resource type="Script" uid="uid://cdsjqahginquc" path="res://scenes/pear.gd" id="1_kpkxt"]
+[ext_resource type="Texture2D" uid="uid://b8xo402odiknd" path="res://img/ninepact_bubble.png" id="1_r0s1c"]
+[ext_resource type="Texture2D" uid="uid://cxoimpojxjm2j" path="res://img/CHARACTERS/pear/BASE.sprites/Timeline 1_0000.tres" id="2_kpkxt"]
+[ext_resource type="Texture2D" uid="uid://8hlewox2iybd" path="res://img/CHARACTERS/pear/BASE.sprites/Timeline 1_0002.tres" id="3_0s4sc"]
+[ext_resource type="Texture2D" uid="uid://bxdmxd1ds3h71" path="res://img/CHARACTERS/pear/BASE.sprites/Timeline 1_0004.tres" id="4_q34mb"]
+[ext_resource type="Texture2D" uid="uid://grtrxfu6dvi4" path="res://img/CHARACTERS/pear/BASE.sprites/Timeline 1_0006.tres" id="5_26y8w"]
+[ext_resource type="Texture2D" uid="uid://dvkovli5s3upq" path="res://img/CHARACTERS/pear/BASE.sprites/Timeline 1_0007.tres" id="6_jhbik"]
+[ext_resource type="Texture2D" uid="uid://newd53eiuxj" path="res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0015.tres" id="7_w7nhl"]
+[ext_resource type="Texture2D" uid="uid://boaku3gy7vcsu" path="res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0000.tres" id="8_glxc1"]
+[ext_resource type="Texture2D" uid="uid://b1mc8djcjmjwo" path="res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0001.tres" id="9_yov1e"]
+[ext_resource type="Texture2D" uid="uid://bpnfdyeko8cis" path="res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0002.tres" id="10_13r1f"]
+[ext_resource type="Texture2D" uid="uid://ctsb6yc0ym4py" path="res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0003.tres" id="11_0wlob"]
+[ext_resource type="Texture2D" uid="uid://vf3cfm2em2oe" path="res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0004.tres" id="12_1idyh"]
+[ext_resource type="Texture2D" uid="uid://d13kdufcu38ym" path="res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0005.tres" id="13_t4776"]
+[ext_resource type="Texture2D" uid="uid://bcjffos4mym77" path="res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0006.tres" id="14_578dc"]
+[ext_resource type="Texture2D" uid="uid://x8ikh8w600hu" path="res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0007.tres" id="15_trjrl"]
+[ext_resource type="Texture2D" uid="uid://cokxdi1tv67qn" path="res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0008.tres" id="16_asj7u"]
+[ext_resource type="Texture2D" uid="uid://c832jsk1cj0yv" path="res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0009.tres" id="17_js28g"]
+[ext_resource type="Texture2D" uid="uid://ndoqymjitkmh" path="res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0010.tres" id="18_52518"]
+[ext_resource type="Texture2D" uid="uid://dyp1dnf2kqoa" path="res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0011.tres" id="19_c0wxv"]
+[ext_resource type="Texture2D" uid="uid://bwpbo5udstjum" path="res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0012.tres" id="20_oer1y"]
+[ext_resource type="Texture2D" uid="uid://b5l4a6drkwsss" path="res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0013.tres" id="21_7wcc0"]
+[ext_resource type="Texture2D" uid="uid://6sicvuqaryw4" path="res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0014.tres" id="22_cinml"]
+[ext_resource type="Texture2D" uid="uid://gpkm7iq683hv" path="res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0016.tres" id="23_neei2"]
+[ext_resource type="Texture2D" uid="uid://7ue8pxcwicm8" path="res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0017.tres" id="24_px4r3"]
+[ext_resource type="Texture2D" uid="uid://cs5gleexs3d5i" path="res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0018.tres" id="25_r4pct"]
+[ext_resource type="Texture2D" uid="uid://cri30w83ei3ow" path="res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0019.tres" id="26_0a88j"]
+[ext_resource type="Texture2D" uid="uid://bwepvqg6lwxty" path="res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0020.tres" id="27_seeeu"]
+[ext_resource type="Texture2D" uid="uid://pdt601h3e8lt" path="res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0021.tres" id="28_15ycp"]
+[ext_resource type="Texture2D" uid="uid://c5wki4og8ql4p" path="res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0022.tres" id="29_2d22p"]
+[ext_resource type="Texture2D" uid="uid://cqksih4lnfnx5" path="res://img/talkbubblewithtail.png" id="30_lrq2j"]
+[ext_resource type="Theme" uid="uid://xsaj5g2ks81b" path="res://theme'/base.tres" id="31_iul0n"]
+[ext_resource type="AudioStream" uid="uid://1q6jtu5ecbk7" path="res://sfx/bubble.wav" id="33_0s4sc"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rxf60"]
+animations = [{
+"frames": [{
+"duration": 20.0,
+"texture": ExtResource("2_kpkxt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_0s4sc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_q34mb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_26y8w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_jhbik")
+}],
+"loop": 2,
+"name": &"default",
+"speed": 7.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3f5hn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_w7nhl")
+}],
+"loop": 1,
+"name": &"stop",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_glxc1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_yov1e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_13r1f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_0wlob")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_1idyh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_t4776")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_578dc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_trjrl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_asj7u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_js28g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_52518")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_c0wxv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_oer1y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_7wcc0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_cinml")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_w7nhl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_neei2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_px4r3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_r4pct")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_0a88j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_seeeu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_15ycp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_2d22p")
+}],
+"loop": 2,
+"name": &"talk",
+"speed": 20.0
+}]
+
+[sub_resource type="Animation" id="Animation_kpkxt"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MarginContainer/NinePatchRect/RichTextLabel:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MarginContainer:size")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(365, 50)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("MarginContainer:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("MarginContainer:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("MarginContainer:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(53, -22)]
+}
+
+[sub_resource type="Animation" id="Animation_q34mb"]
+resource_name = "open"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MarginContainer:size")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.96666664),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(95, 50), Vector2(365, 50)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MarginContainer:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.49),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_0s4sc"]
+resource_name = "type"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MarginContainer/NinePatchRect/RichTextLabel:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MarginContainer:scale")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.06666666, 0.16666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.5298947, 0.5298947), Vector2(1.025, 1.025), Vector2(1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("MarginContainer:position")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.06666669, 0.1666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(53, 0), Vector2(53, -26), Vector2(53, -22)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_q34mb"]
+_data = {
+&"RESET": SubResource("Animation_kpkxt"),
+&"open": SubResource("Animation_q34mb"),
+&"type": SubResource("Animation_0s4sc")
+}
+
+[node name="Pear" type="CanvasLayer" unique_id=1355283899]
+script = ExtResource("1_kpkxt")
+
+[node name="basec2" type="NinePatchRect" parent="." unique_id=649733157]
+offset_left = 18.0
+offset_top = 13.0
+offset_right = 58.0
+offset_bottom = 53.0
+scale = Vector2(1.9761226, 1.9761226)
+texture = ExtResource("1_r0s1c")
+
+[node name="basec" type="NinePatchRect" parent="." unique_id=284520640]
+offset_left = 21.999996
+offset_top = 16.999996
+offset_right = 61.999996
+offset_bottom = 56.999996
+scale = Vector2(1.7714041, 1.7714041)
+texture = ExtResource("1_r0s1c")
+
+[node name="base" type="AnimatedSprite2D" parent="." unique_id=457390248]
+position = Vector2(59, 54)
+sprite_frames = SubResource("SpriteFrames_rxf60")
+autoplay = "default"
+frame_progress = 0.38655317
+
+[node name="talk" type="AnimatedSprite2D" parent="." unique_id=785416111]
+position = Vector2(59, 54)
+sprite_frames = SubResource("SpriteFrames_3f5hn")
+animation = &"talk"
+frame_progress = 0.3814426
+
+[node name="bubble" type="Node2D" parent="." unique_id=296457930]
+position = Vector2(48, 44)
+
+[node name="MarginContainer" type="MarginContainer" parent="bubble" unique_id=1504429760]
+custom_minimum_size = Vector2(95, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 53.0
+offset_top = -22.0
+offset_right = 418.0
+offset_bottom = 28.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="NinePatchRect" type="NinePatchRect" parent="bubble/MarginContainer" unique_id=335998970]
+layout_mode = 2
+texture = ExtResource("30_lrq2j")
+region_rect = Rect2(0, 0, 64, 64)
+patch_margin_left = 31
+patch_margin_top = 25
+patch_margin_right = 31
+patch_margin_bottom = 25
+
+[node name="RichTextLabel" type="RichTextLabel" parent="bubble/MarginContainer/NinePatchRect" unique_id=933200851]
+clip_contents = false
+layout_mode = 0
+offset_left = 18.0
+offset_top = 10.0
+offset_right = 343.0
+offset_bottom = 41.0
+theme = ExtResource("31_iul0n")
+bbcode_enabled = true
+text = "Thanks for downloading Pixel AE Font by Essssam. You can find more from the same creator on their page: Essssam. "
+fit_content = true
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters_behavior = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="animation" type="AnimationPlayer" parent="bubble" unique_id=2603907]
+libraries/ = SubResource("AnimationLibrary_q34mb")
+
+[node name="bubble" type="AudioStreamPlayer2D" parent="bubble" unique_id=528964692]
+position = Vector2(223, 0)
+stream = ExtResource("33_0s4sc")
+
+[node name="advance?" type="RichTextLabel" parent="bubble" unique_id=893668038]
+visible = false
+clip_contents = false
+offset_left = 56.000015
+offset_top = 27.0
+offset_right = 295.5904
+offset_bottom = 86.304565
+scale = Vector2(0.42155278, 0.42155278)
+theme = ExtResource("31_iul0n")
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/normal_font_size = 34
+text = "press \"Q\""

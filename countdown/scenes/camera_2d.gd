@@ -3,7 +3,7 @@ extends Camera2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	zoom = Vector2(1.0, 1.0)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -13,9 +13,9 @@ func _process(delta: float) -> void:
 		zoom.x += 0.05
 		zoom.y += 0.05
 		
-		if zoom.x > 1.5:
-			zoom.x = 1.5
-			zoom.y = 1.5
+		if zoom.x > 2.0:
+			zoom.x = 2.0
+			zoom.y = 2.0
 		
 	if Input.is_action_just_pressed("shrink"):
 		zoom.x -= 0.05

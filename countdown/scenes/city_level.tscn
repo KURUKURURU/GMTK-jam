@@ -88,7 +88,7 @@ pitch_scale = 0.55
 position = Vector2(244, 133)
 
 [node name="Camera2D" type="Camera2D" parent="Entities/player" unique_id=1785494743]
-position = Vector2(0, -70.08)
+position = Vector2(129, -63)
 position_smoothing_enabled = true
 script = ExtResource("7_leqrd")
 

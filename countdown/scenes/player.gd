@@ -3,6 +3,8 @@ extends CharacterBody2D
 @onready var animation: AnimatedSprite2D = $AnimatedSprite2D
 @onready var steps = $steps
 
+var dead := false
+
 var SPEED := 300.0
 const WALK_SPEED = 300.0
 const RUN_SPEED = 500.0
@@ -88,5 +90,12 @@ func _physics_process(delta: float) -> void:
 	else:
 		# Footsteps shouldn't play while sliding
 		steps.stop() 
-
+	
+	if dead:
+		match is_on_floor():
+			true:
+				animation.play("dead")
+			false:
+				animation.play("flail")
+	
 	move_and_slide()

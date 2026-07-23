@@ -1,0 +1,16 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+uid="uid://c7lydvw0x16ue"
+path="res://.godot/imported/BASE.tpsheet-6681bae5af3b65a34cd1f2aa727895cc.res"
+
+[deps]
+
+files=["res://img/CHARACTERS/pear/BASE.sprites/Timeline 1_0000.tres", "res://img/CHARACTERS/pear/BASE.sprites/Timeline 1_0001.tres", "res://img/CHARACTERS/pear/BASE.sprites/Timeline 1_0002.tres", "res://img/CHARACTERS/pear/BASE.sprites/Timeline 1_0003.tres", "res://img/CHARACTERS/pear/BASE.sprites/Timeline 1_0004.tres", "res://img/CHARACTERS/pear/BASE.sprites/Timeline 1_0005.tres", "res://img/CHARACTERS/pear/BASE.sprites/Timeline 1_0006.tres", "res://img/CHARACTERS/pear/BASE.sprites/Timeline 1_0007.tres"]
+
+source_file="res://img/CHARACTERS/pear/BASE.tpsheet"
+dest_files=["res://.godot/imported/BASE.tpsheet-6681bae5af3b65a34cd1f2aa727895cc.res", "res://img/CHARACTERS/pear/BASE.sprites/Timeline 1_0000.tres", "res://img/CHARACTERS/pear/BASE.sprites/Timeline 1_0001.tres", "res://img/CHARACTERS/pear/BASE.sprites/Timeline 1_0002.tres", "res://img/CHARACTERS/pear/BASE.sprites/Timeline 1_0003.tres", "res://img/CHARACTERS/pear/BASE.sprites/Timeline 1_0004.tres", "res://img/CHARACTERS/pear/BASE.sprites/Timeline 1_0005.tres", "res://img/CHARACTERS/pear/BASE.sprites/Timeline 1_0006.tres", "res://img/CHARACTERS/pear/BASE.sprites/Timeline 1_0007.tres"]
+
+[params]
+

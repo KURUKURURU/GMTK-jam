@@ -1,0 +1,16 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+uid="uid://c63wl50upjg8r"
+path="res://.godot/imported/TALK.tpsheet-acbe839a226b731657f991197bac523f.res"
+
+[deps]
+
+files=["res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0000.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0001.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0002.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0003.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0004.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0005.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0006.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0007.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0008.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0009.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0010.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0011.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0012.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0013.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0014.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0015.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0016.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0017.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0018.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0019.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0020.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0021.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0022.tres"]
+
+source_file="res://img/CHARACTERS/pear/TALK.tpsheet"
+dest_files=["res://.godot/imported/TALK.tpsheet-acbe839a226b731657f991197bac523f.res", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0000.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0001.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0002.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0003.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0004.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0005.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0006.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0007.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0008.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0009.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0010.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0011.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0012.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0013.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0014.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0015.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0016.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0017.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0018.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0019.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0020.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0021.tres", "res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0022.tres"]
+
+[params]
+
