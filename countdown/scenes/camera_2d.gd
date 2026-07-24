@@ -1,5 +1,6 @@
 extends Camera2D
 
+@export var player: CharacterBody2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -25,7 +26,13 @@ func _process(delta: float) -> void:
 			zoom.x = 1.0
 			zoom.y = 1.0
 	
-	cameraUpdate() # follows the camera
+	if "dead" in player:
+		if not player.dead:
+			cameraUpdate() # follows the camera
+		else:
+			position = Vector2(0, 0)
+	else:
+		cameraUpdate()
 
 func cameraUpdate():
 	var pos = get_local_mouse_position()

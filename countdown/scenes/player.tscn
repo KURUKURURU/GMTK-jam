@@ -23,6 +23,7 @@
 [ext_resource type="Texture2D" uid="uid://cism7cps8y5vh" path="res://img/CHARACTERS/apple/SLIDE.sprites/Timeline 1_0000.tres" id="12_oprun"]
 [ext_resource type="Texture2D" uid="uid://dl2vmnt0lq7f0" path="res://img/CHARACTERS/apple/SLIDE.sprites/Timeline 1_0001.tres" id="13_a8ls1"]
 [ext_resource type="Texture2D" uid="uid://daoiv80a2m51x" path="res://img/CHARACTERS/apple/SLIDE.sprites/Timeline 1_0002.tres" id="14_qfm1y"]
+[ext_resource type="AudioStream" uid="uid://dbjncnyxwq1o6" path="res://sfx/jump.wav" id="24_l71n6"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_rxf60"]
 animations = [{
@@ -145,3 +146,7 @@ shape = SubResource("CircleShape2D_u8vuu")
 stream = ExtResource("4_dqkch")
 volume_db = 4.575
 pitch_scale = 0.97
+
+[node name="jump" type="AudioStreamPlayer2D" parent="." unique_id=307853460]
+stream = ExtResource("24_l71n6")
+volume_db = -5.505

@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://hudu5iqid6mq"]
+
+[ext_resource type="Script" uid="uid://c6c76s8qqxfvo" path="res://spike.gd" id="1_ljd5v"]
+
+[node name="Spike" type="StaticBody2D" unique_id=1985350207]
+script = ExtResource("1_ljd5v")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=176693068]
+position = Vector2(0, -16.2)
+polygon = PackedVector2Array(0, 0, -7, 16, 7, 16)
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=998001344]
+position = Vector2(-11, -19.2)
+polygon = PackedVector2Array(11, 3, 4, 19, 18, 19)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=147136195]
+position = Vector2(0, -7.2)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Area2D" unique_id=295174899]
+position = Vector2(0, -10.799999)
+polygon = PackedVector2Array(0, 0, -7, 16, 7, 16)
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_body_entered"]

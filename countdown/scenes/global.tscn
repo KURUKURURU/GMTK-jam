@@ -1,0 +1,176 @@
+[gd_scene format=3 uid="uid://cdcf86j1kskkx"]
+
+[ext_resource type="Script" uid="uid://qjbn1cdto8mi" path="res://global.gd" id="1_4pk28"]
+[ext_resource type="AudioStream" uid="uid://civf0u2vqmmpw" path="res://sfx/game_over.wav" id="2_nmxvb"]
+[ext_resource type="Script" uid="uid://c520b6njad6vt" path="res://scenes/gameover_screen.gd" id="3_m3l3d"]
+[ext_resource type="Texture2D" uid="uid://b8xo402odiknd" path="res://img/ninepact_bubble.png" id="4_6rlim"]
+[ext_resource type="Theme" uid="uid://xsaj5g2ks81b" path="res://theme'/base.tres" id="4_nelfd"]
+
+[sub_resource type="Animation" id="Animation_m3l3d"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Gameover_Screen/Node2D/RichTextLabel:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Gameover_Screen/Node2D:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_nelfd"]
+resource_name = "gameover"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Gameover_Screen/Node2D/RichTextLabel:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 1.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Gameover_Screen/Node2D:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6rlim"]
+_data = {
+&"RESET": SubResource("Animation_m3l3d"),
+&"gameover": SubResource("Animation_nelfd")
+}
+
+[sub_resource type="Animation" id="Animation_6rlim"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D/RichTextLabel:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["GAME 
+OVER"]
+}
+
+[sub_resource type="Animation" id="Animation_mmyj5"]
+resource_name = "default"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D/RichTextLabel:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.49),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": ["GAME 
+OVER", "GAME 
+OVER|"]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_unqd7"]
+_data = {
+&"RESET": SubResource("Animation_6rlim"),
+&"default": SubResource("Animation_mmyj5")
+}
+
+[node name="Global" type="Node2D" unique_id=686634903]
+script = ExtResource("1_4pk28")
+
+[node name="gameover" type="AudioStreamPlayer" parent="." unique_id=623240176]
+stream = ExtResource("2_nmxvb")
+
+[node name="actionmusic" type="AudioStreamPlayer" parent="." unique_id=1616839442]
+
+[node name="animation" type="AnimationPlayer" parent="." unique_id=1173962809]
+libraries/ = SubResource("AnimationLibrary_6rlim")
+
+[node name="Gameover_Screen" type="CanvasLayer" parent="." unique_id=1514565494]
+script = ExtResource("3_m3l3d")
+
+[node name="Node2D" type="Node2D" parent="Gameover_Screen" unique_id=1332648769]
+
+[node name="ColorRect" type="ColorRect" parent="Gameover_Screen/Node2D" unique_id=306255830]
+offset_right = 646.0
+offset_bottom = 365.0
+color = Color(0, 0, 0, 1)
+
+[node name="basec2" type="NinePatchRect" parent="Gameover_Screen/Node2D" unique_id=1410832056]
+offset_left = 431.99997
+offset_top = 176.0
+offset_right = 586.0683
+offset_bottom = 296.46283
+scale = Vector2(1.9342066, 1.9342066)
+texture = ExtResource("4_6rlim")
+patch_margin_left = 31
+patch_margin_top = 31
+patch_margin_right = 31
+patch_margin_bottom = 31
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Gameover_Screen/Node2D/basec2" unique_id=1250564499]
+layout_mode = 0
+offset_left = 20.163322
+offset_top = 20.163305
+offset_right = 115.16332
+offset_bottom = 88.16331
+scale = Vector2(0.7578914, 0.7578914)
+
+[node name="Button" type="Button" parent="Gameover_Screen/Node2D/basec2/VBoxContainer" unique_id=255502730]
+custom_minimum_size = Vector2(80, 20)
+layout_mode = 2
+text = "Restart"
+
+[node name="Button2" type="Button" parent="Gameover_Screen/Node2D/basec2/VBoxContainer" unique_id=1391851073]
+custom_minimum_size = Vector2(80, 20)
+layout_mode = 2
+text = "Quit"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Gameover_Screen/Node2D" unique_id=2052992923]
+offset_left = 34.0
+offset_top = 19.0
+offset_right = 646.0
+offset_bottom = 341.0
+scale = Vector2(0.43716037, 0.43716037)
+theme = ExtResource("4_nelfd")
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_constants/line_separation = -67
+theme_override_font_sizes/normal_font_size = 118
+text = "GAME 
+OVER"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Gameover_Screen/Node2D" unique_id=1511436726]
+root_node = NodePath("../..")
+libraries/ = SubResource("AnimationLibrary_unqd7")
+autoplay = &"default"

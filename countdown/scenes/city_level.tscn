@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://d3dwrovrq3ewo" path="res://img/tileset/20mb.png" id="9_0kw8b"]
 [ext_resource type="AudioStream" uid="uid://dwm1gd3dlvfyn" path="res://sfx/fireworks_bgnoise.wav" id="9_yejta"]
 [ext_resource type="PackedScene" uid="uid://cbqxeuwcebbk8" path="res://scenes/fragile_box.tscn" id="10_2fprk"]
+[ext_resource type="PackedScene" uid="uid://hudu5iqid6mq" path="res://scenes/spike.tscn" id="15_yejta"]
 
 [node name="CityLevel" type="Node2D" unique_id=1847495766]
 script = ExtResource("1_dpnyc")
@@ -87,10 +88,11 @@ pitch_scale = 0.55
 [node name="player" parent="Entities" unique_id=2113539104 instance=ExtResource("1_jolhp")]
 position = Vector2(244, 133)
 
-[node name="Camera2D" type="Camera2D" parent="Entities/player" unique_id=1785494743]
+[node name="Camera2D" type="Camera2D" parent="Entities/player" unique_id=1785494743 node_paths=PackedStringArray("player")]
 position = Vector2(129, -63)
 position_smoothing_enabled = true
 script = ExtResource("7_leqrd")
+player = NodePath("..")
 
 [node name="Obstacles" type="Node2D" parent="." unique_id=631828430]
 
@@ -108,6 +110,11 @@ player = NodePath("../../Entities/player")
 [node name="FragileBox2" parent="Obstacles" unique_id=852713036 node_paths=PackedStringArray("player") instance=ExtResource("10_2fprk")]
 position = Vector2(754, 286)
 scale = Vector2(1.9062059, 1.9062059)
+player = NodePath("../../Entities/player")
+
+[node name="Spike" parent="Obstacles" unique_id=1985350207 node_paths=PackedStringArray("player") instance=ExtResource("15_yejta")]
+position = Vector2(411, 319)
+scale = Vector2(2.3632464, 2.3632464)
 player = NodePath("../../Entities/player")
 
 [node name="lag" type="TextureRect" parent="." unique_id=105395648]
