@@ -16,6 +16,10 @@
 [ext_resource type="AudioStream" uid="uid://dwm1gd3dlvfyn" path="res://sfx/fireworks_bgnoise.wav" id="9_yejta"]
 [ext_resource type="PackedScene" uid="uid://cbqxeuwcebbk8" path="res://scenes/fragile_box.tscn" id="10_2fprk"]
 [ext_resource type="PackedScene" uid="uid://hudu5iqid6mq" path="res://scenes/spike.tscn" id="15_yejta"]
+[ext_resource type="PackedScene" uid="uid://bsex8qc8exw1s" path="res://scenes/firework_trigger.tscn" id="16_wqb3b"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_3f5hn"]
+normal = Vector2(-0.9999383, -0.011110425)
 
 [node name="CityLevel" type="Node2D" unique_id=1847495766]
 script = ExtResource("1_dpnyc")
@@ -116,6 +120,17 @@ player = NodePath("../../Entities/player")
 position = Vector2(411, 319)
 scale = Vector2(2.3632464, 2.3632464)
 player = NodePath("../../Entities/player")
+
+[node name="FireworkPath" parent="Obstacles" unique_id=1374713156 node_paths=PackedStringArray("trigger", "player") instance=ExtResource("16_wqb3b")]
+position = Vector2(1970, 416)
+trigger = NodePath("Area2D")
+player = NodePath("../../Entities/player")
+
+[node name="Area2D" type="Area2D" parent="Obstacles/FireworkPath" unique_id=166962314]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacles/FireworkPath/Area2D" unique_id=721140618]
+position = Vector2(-457, -205)
+shape = SubResource("WorldBoundaryShape2D_3f5hn")
 
 [node name="lag" type="TextureRect" parent="." unique_id=105395648]
 offset_left = -1999.0

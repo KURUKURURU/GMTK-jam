@@ -1,7 +1,4 @@
 extends StaticBody2D
-@onready var collision_polygon: CollisionPolygon2D = $CollisionPolygon2D
-@onready var area_2d: Area2D = $Area2D
-@onready var hitbox: CollisionPolygon2D = $Area2D/CollisionPolygon2D2
 
 @export var player : CharacterBody2D
 
