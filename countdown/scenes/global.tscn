@@ -35,6 +35,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id="Animation_nelfd"]
 resource_name = "gameover"
+length = 2.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -42,7 +43,7 @@ tracks/0/path = NodePath("Gameover_Screen/Node2D/RichTextLabel:visible_ratio")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.5, 1),
+"times": PackedFloat32Array(0, 0.5, 1.9666667),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [0.0, 0.0, 1.0]
@@ -54,7 +55,7 @@ tracks/1/path = NodePath("Gameover_Screen/Node2D:modulate")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 1),
+"times": PackedFloat32Array(0, 1.9666667),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -127,11 +128,29 @@ offset_right = 646.0
 offset_bottom = 365.0
 color = Color(0, 0, 0, 1)
 
+[node name="VBoxContainer" type="VBoxContainer" parent="Gameover_Screen/Node2D" unique_id=1250564499]
+offset_left = 286.0
+offset_top = 215.0
+offset_right = 381.0
+offset_bottom = 283.0
+scale = Vector2(0.7578914, 0.7578914)
+
+[node name="Button" type="Button" parent="Gameover_Screen/Node2D/VBoxContainer" unique_id=255502730]
+custom_minimum_size = Vector2(80, 20)
+layout_mode = 2
+text = "Restart"
+
+[node name="Button2" type="Button" parent="Gameover_Screen/Node2D/VBoxContainer" unique_id=1391851073]
+custom_minimum_size = Vector2(80, 20)
+layout_mode = 2
+text = "Quit"
+
 [node name="basec2" type="NinePatchRect" parent="Gameover_Screen/Node2D" unique_id=1410832056]
-offset_left = 431.99997
-offset_top = 176.0
-offset_right = 586.0683
-offset_bottom = 296.46283
+visible = false
+offset_left = 172.00003
+offset_top = 209.0
+offset_right = 326.06836
+offset_bottom = 329.46283
 scale = Vector2(1.9342066, 1.9342066)
 texture = ExtResource("4_6rlim")
 patch_margin_left = 31
@@ -139,36 +158,21 @@ patch_margin_top = 31
 patch_margin_right = 31
 patch_margin_bottom = 31
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Gameover_Screen/Node2D/basec2" unique_id=1250564499]
-layout_mode = 0
-offset_left = 20.163322
-offset_top = 20.163305
-offset_right = 115.16332
-offset_bottom = 88.16331
-scale = Vector2(0.7578914, 0.7578914)
-
-[node name="Button" type="Button" parent="Gameover_Screen/Node2D/basec2/VBoxContainer" unique_id=255502730]
-custom_minimum_size = Vector2(80, 20)
-layout_mode = 2
-text = "Restart"
-
-[node name="Button2" type="Button" parent="Gameover_Screen/Node2D/basec2/VBoxContainer" unique_id=1391851073]
-custom_minimum_size = Vector2(80, 20)
-layout_mode = 2
-text = "Quit"
-
 [node name="RichTextLabel" type="RichTextLabel" parent="Gameover_Screen/Node2D" unique_id=2052992923]
-offset_left = 34.0
-offset_top = 19.0
-offset_right = 646.0
-offset_bottom = 341.0
-scale = Vector2(0.43716037, 0.43716037)
+clip_contents = false
+offset_left = 213.00002
+offset_top = 46.999996
+offset_right = 1116.5586
+offset_bottom = 808.73425
+scale = Vector2(0.25074568, 0.25074568)
 theme = ExtResource("4_nelfd")
 theme_override_colors/default_color = Color(1, 1, 1, 1)
 theme_override_constants/line_separation = -67
-theme_override_font_sizes/normal_font_size = 118
+theme_override_font_sizes/normal_font_size = 226
 text = "GAME 
 OVER"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Gameover_Screen/Node2D" unique_id=1511436726]
 root_node = NodePath("../..")

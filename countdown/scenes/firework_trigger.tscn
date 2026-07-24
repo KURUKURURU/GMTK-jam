@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://bsex8qc8exw1s"]
+
+[ext_resource type="Script" uid="uid://nhscca7gliia" path="res://scenes/firework_trigger.gd" id="1_llyc2"]
+[ext_resource type="PackedScene" uid="uid://ukrkgbk2r7av" path="res://scenes/firework_enemy.tscn" id="2_oji1l"]
+
+[sub_resource type="Curve2D" id="Curve2D_llyc2"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -2, 2, 118.18181, 126.44627, -118.18181, -126.44627, -83, -158, 57.85124, -1.6528925, -57.85124, 1.6528925, -288, -243)
+}
+point_count = 3
+
+[node name="FireworkPath" type="Path2D" unique_id=1374713156]
+curve = SubResource("Curve2D_llyc2")
+script = ExtResource("1_llyc2")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="." unique_id=314058472]
+position = Vector2(-281.621, -243.33502)
+rotation = 3.0663338
+progress = 419.24478
+
+[node name="firework" parent="PathFollow2D" unique_id=2008544330 instance=ExtResource("2_oji1l")]
+rotation = 1.5707964

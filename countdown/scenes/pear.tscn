@@ -302,13 +302,13 @@ texture = ExtResource("1_r0s1c")
 position = Vector2(59, 54)
 sprite_frames = SubResource("SpriteFrames_rxf60")
 autoplay = "default"
-frame_progress = 0.090971425
+frame_progress = 0.8902618
 
 [node name="talk" type="AnimatedSprite2D" parent="." unique_id=785416111]
 position = Vector2(59, 54)
 sprite_frames = SubResource("SpriteFrames_3f5hn")
 animation = &"talk"
-frame_progress = 0.903833
+frame_progress = 0.6243497
 
 [node name="bubble" type="Node2D" parent="." unique_id=296457930]
 position = Vector2(48, 44)
@@ -319,8 +319,9 @@ anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 53.0
+offset_top = -22.0
 offset_right = 418.0
-offset_bottom = 50.0
+offset_bottom = 28.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -370,3 +371,5 @@ theme_override_colors/default_color = Color(1, 1, 1, 1)
 theme_override_constants/outline_size = 4
 theme_override_font_sizes/normal_font_size = 34
 text = "press \"Q\""
+
+[node name="animation_whole" type="AnimationPlayer" parent="." unique_id=318688128]

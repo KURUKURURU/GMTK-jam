@@ -1,0 +1,71 @@
+[gd_scene format=3 uid="uid://ukrkgbk2r7av"]
+
+[ext_resource type="Texture2D" uid="uid://cgkihkekhi0uo" path="res://img/firework.png" id="1_6smua"]
+[ext_resource type="Script" uid="uid://cy4q6hfea8ph6" path="res://scenes/firework_enemy.gd" id="1_b5u8s"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_mfkcv"]
+blend_mode = 1
+
+[sub_resource type="Curve" id="Curve_v7rmp"]
+_data = [Vector2(0.014084503, 0), 0.0, 2.8625247, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_fyjda"]
+curve = SubResource("Curve_v7rmp")
+
+[sub_resource type="Gradient" id="Gradient_m1txt"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_ufg75"]
+gradient = SubResource("Gradient_m1txt")
+
+[sub_resource type="Curve" id="Curve_b5u8s"]
+_limits = [0.0, 3.0, 0.0, 1.0]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1e-05, 2.9662921), 0.0, 0.0, 0, 0, Vector2(0.22535212, 1.0449438), 0.0, 0.0, 0, 0, Vector2(1, 0.06741595), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[sub_resource type="CurveTexture" id="CurveTexture_sknre"]
+curve = SubResource("Curve_b5u8s")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_y6yfy"]
+lifetime_randomness = 1.0
+particle_flag_disable_z = true
+direction = Vector3(1, 1, 0)
+spread = 180.0
+initial_velocity_min = 50.0
+initial_velocity_max = 150.0
+gravity = Vector3(0, 98, 0)
+damping_min = 48.529003
+damping_max = 100.00001
+scale_min = 0.5
+scale_over_velocity_min = 23.26
+scale_over_velocity_max = 97.42
+scale_over_velocity_curve = SubResource("CurveTexture_sknre")
+color_ramp = SubResource("GradientTexture1D_ufg75")
+alpha_curve = SubResource("CurveTexture_fyjda")
+
+[node name="firework" type="StaticBody2D" unique_id=2008544330]
+script = ExtResource("1_b5u8s")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="." unique_id=476363607]
+material = SubResource("CanvasItemMaterial_mfkcv")
+position = Vector2(0, 29)
+scale = Vector2(0.31090078, 0.31090078)
+amount = 200
+trail_enabled = true
+trail_lifetime = 0.01
+trail_sections = 2
+trail_section_subdivisions = 1
+process_material = SubResource("ParticleProcessMaterial_y6yfy")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=701065557]
+texture = ExtResource("1_6smua")
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="." unique_id=1315683906]
+polygon = PackedVector2Array(0, -30, -12, -9, -7, -9, -7, 20, -4, 20, -4, 27, 4, 27, 4, 20, 8, 20, 8, -8, 13, -8)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1176790321]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" unique_id=1092002078]
+position = Vector2(0, 2.0000002)
+scale = Vector2(1.1784828, 1.1784828)
+polygon = PackedVector2Array(0, -30, -12, -9, -7, -9, -7, 20, -4, 20, -4, 27, 4, 27, 4, 20, 8, 20, 8, -8, 13, -8)

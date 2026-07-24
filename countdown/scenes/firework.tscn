@@ -1,16 +1,17 @@
 [gd_scene format=3 uid="uid://3701rcla4520"]
 
 [ext_resource type="Script" uid="uid://sc7qkcbydi83" path="res://scenes/firework.gd" id="1_rhpnd"]
+[ext_resource type="Material" uid="uid://crkiqgtpg43ii" path="res://scenes/blast.tres" id="2_m1txt"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_xwatn"]
 blend_mode = 1
 
-[sub_resource type="Gradient" id="Gradient_87uty"]
+[sub_resource type="Gradient" id="Gradient_rhpnd"]
 offsets = PackedFloat32Array(0, 0.98125)
 colors = PackedColorArray(0.2958664, 0.29586655, 0.29586646, 1, 0.52906674, 0.5290667, 0.5290667, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_750n0"]
-gradient = SubResource("Gradient_87uty")
+gradient = SubResource("Gradient_rhpnd")
 width = 1
 fill_from = Vector2(0, 1)
 
@@ -18,7 +19,7 @@ fill_from = Vector2(0, 1)
 _data = [Vector2(0, 0), 0.0, 2.777362, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
 point_count = 2
 
-[sub_resource type="CurveTexture" id="CurveTexture_a2gc5"]
+[sub_resource type="CurveTexture" id="CurveTexture_m1txt"]
 curve = SubResource("Curve_y4dlq")
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_rxf60"]
@@ -31,45 +32,20 @@ spread = 0.0
 initial_velocity_min = 100.0
 initial_velocity_max = 200.0
 gravity = Vector3(0, 0, 0)
-alpha_curve = SubResource("CurveTexture_a2gc5")
+alpha_curve = SubResource("CurveTexture_m1txt")
 sub_emitter_mode = 2
 sub_emitter_amount_at_end = 32
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_i7avt"]
 blend_mode = 1
 
-[sub_resource type="Gradient" id="Gradient_rhpnd"]
+[sub_resource type="Gradient" id="Gradient_iff28"]
 colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_qcnbq"]
-gradient = SubResource("Gradient_rhpnd")
+gradient = SubResource("Gradient_iff28")
 width = 1
 fill_to = Vector2(0, 1)
-
-[sub_resource type="Curve" id="Curve_v7rmp"]
-_data = [Vector2(0.014084503, 0), 0.0, 2.8625247, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
-point_count = 2
-
-[sub_resource type="CurveTexture" id="CurveTexture_v6vtq"]
-curve = SubResource("Curve_v7rmp")
-
-[sub_resource type="Gradient" id="Gradient_m1txt"]
-
-[sub_resource type="GradientTexture1D" id="GradientTexture1D_olexp"]
-gradient = SubResource("Gradient_m1txt")
-
-[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_3f5hn"]
-lifetime_randomness = 1.0
-particle_flag_disable_z = true
-direction = Vector3(1, 1, 0)
-spread = 180.0
-initial_velocity_min = 50.0
-initial_velocity_max = 150.0
-gravity = Vector3(0, 98, 0)
-damping_max = 100.00001
-scale_min = 0.5
-color_ramp = SubResource("GradientTexture1D_olexp")
-alpha_curve = SubResource("CurveTexture_v6vtq")
 
 [node name="Fireworks" type="Node2D" unique_id=1350121637]
 script = ExtResource("1_rhpnd")
@@ -85,7 +61,8 @@ process_material = SubResource("ParticleProcessMaterial_rxf60")
 
 [node name="blast" type="GPUParticles2D" parent="." unique_id=1230354544]
 material = SubResource("CanvasItemMaterial_i7avt")
+position = Vector2(211, -46)
 amount = 1000
 texture = SubResource("GradientTexture2D_qcnbq")
 trail_enabled = true
-process_material = SubResource("ParticleProcessMaterial_3f5hn")
+process_material = ExtResource("2_m1txt")
