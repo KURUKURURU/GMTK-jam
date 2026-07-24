@@ -8,6 +8,7 @@ extends Path2D
 # Movement properties
 @export var speed: float = 400.0
 @export var loop_path: bool = true
+@export var went: bool = false
 
 @export var trigger : Area2D
 @export var player : CharacterBody2D
@@ -15,6 +16,7 @@ extends Path2D
 var moving := false
 
 func _ready() -> void:
+	path_follow.progress = 0.0
 	trigger.body_entered.connect(start_trail)
 	path_follow.loop = loop_path
 
@@ -28,9 +30,11 @@ func _process(delta: float) -> void:
 		
 		$boom.play()
 		hide()
+		
 
 func start_trail(body: Node2D) -> void:
-	if body == player:
+	if body == player and not went:
+		went = true
 		show()
 		path_follow.progress = 0.0
 		moving = true

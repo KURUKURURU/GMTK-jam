@@ -1,0 +1,124 @@
+[gd_scene format=3 uid="uid://bbe4w1wnr8j0y"]
+
+[ext_resource type="Script" uid="uid://jc15m0bgjdui" path="res://scenes/start_menu.gd" id="1_h61rw"]
+[ext_resource type="Texture2D" uid="uid://55r718u8a03x" path="res://img/phonewhiute.png" id="1_m7x51"]
+[ext_resource type="Texture2D" uid="uid://lm0rdrm13mqg" path="res://img/december 31st.png" id="2_h61rw"]
+[ext_resource type="AudioStream" uid="uid://bece1njpxbwl" path="res://sfx/phonering.wav" id="3_fcv5n"]
+
+[sub_resource type="Animation" id="Animation_h61rw"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_m7x51")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TextureRect:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.73307145, 0.73307145)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TextureRect:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(182, 53.999996)]
+}
+
+[sub_resource type="Animation" id="Animation_fcv5n"]
+resource_name = "pickup"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.54, 1.51),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("1_m7x51"), null, ExtResource("2_h61rw")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TextureRect:scale")
+tracks/1/interp = 0
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.54),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.73307145, 0.73307145), Vector2(0.965, 0.965)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TextureRect:position")
+tracks/2/interp = 0
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(182, 53.999996), Vector2(138, 2)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4v6gu"]
+_data = {
+&"RESET": SubResource("Animation_h61rw"),
+&"pickup": SubResource("Animation_fcv5n")
+}
+
+[node name="start_menu" type="Node2D" unique_id=967036911]
+script = ExtResource("1_h61rw")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=552747670]
+offset_right = 642.0
+offset_bottom = 363.0
+color = Color(0, 0, 0, 1)
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=622221428]
+offset_left = 182.0
+offset_top = 53.999996
+offset_right = 546.0
+offset_bottom = 426.0
+scale = Vector2(0.73307145, 0.73307145)
+texture = ExtResource("1_m7x51")
+
+[node name="ringing" type="AudioStreamPlayer" parent="." unique_id=850712946]
+stream = ExtResource("3_fcv5n")
+volume_db = -26.456
+autoplay = true
+
+[node name="pickup" type="TextureButton" parent="." unique_id=597905213]
+offset_left = 167.0
+offset_top = 55.0
+offset_right = 445.0
+offset_bottom = 190.0
+mouse_default_cursor_shape = 2
+
+[node name="animation" type="AnimationPlayer" parent="." unique_id=1001420570]
+libraries/ = SubResource("AnimationLibrary_4v6gu")
+
+[connection signal="pressed" from="pickup" to="." method="_on_pickup_pressed"]

@@ -25,7 +25,7 @@ func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("Q"):
 		advance.emit()
 
-func _talk(message:= "...", talking:= true, prompted:= false, first_play := false):
+func _talk(message:= "...", talking:= true, prompted:= true, first_play := false):
 	bubble.show()
 	advance_.hide()
 	label.text = ""

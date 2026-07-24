@@ -12,7 +12,6 @@
 [ext_resource type="Script" uid="uid://7f1d467og1qs" path="res://scenes/camera_2d.gd" id="7_leqrd"]
 [ext_resource type="AudioStream" uid="uid://075rtd4i6142" path="res://sfx/second.wav" id="8_pasw1"]
 [ext_resource type="AudioStream" uid="uid://lblvu4kaiqwt" path="res://sfx/action_seth_ms.wav" id="8_uhmcg"]
-[ext_resource type="Texture2D" uid="uid://d3dwrovrq3ewo" path="res://img/tileset/20mb.png" id="9_0kw8b"]
 [ext_resource type="AudioStream" uid="uid://dwm1gd3dlvfyn" path="res://sfx/fireworks_bgnoise.wav" id="9_yejta"]
 [ext_resource type="PackedScene" uid="uid://cbqxeuwcebbk8" path="res://scenes/fragile_box.tscn" id="10_2fprk"]
 [ext_resource type="PackedScene" uid="uid://hudu5iqid6mq" path="res://scenes/spike.tscn" id="15_yejta"]
@@ -27,20 +26,22 @@ script = ExtResource("1_dpnyc")
 [node name="Background" type="Node2D" parent="." unique_id=102767683]
 
 [node name="ParallaxBackground" type="Parallax2D" parent="Background" unique_id=857658925]
-scroll_scale = Vector2(0.2, 0.2)
 scroll_offset = Vector2(0, 22)
-repeat_size = Vector2(643.575, 0)
-repeat_times = 2
+repeat_size = Vector2(576, 324)
+repeat_times = 5
 
 [node name="1" type="Sprite2D" parent="Background/ParallaxBackground" unique_id=572020881]
 self_modulate = Color(0.03521989, 0.03521989, 0.03521989, 1)
-position = Vector2(317.74304, 179.98045)
-scale = Vector2(1.1171633, 1.1171633)
 texture = ExtResource("1_duytb")
 
-[node name="Firework" parent="Background/ParallaxBackground/1" unique_id=1350121637 instance=ExtResource("3_sf4er")]
-position = Vector2(0, 28.661486)
-scale = Vector2(0.60211885, 0.60211885)
+[node name="ParallaxBackground4" type="Parallax2D" parent="Background" unique_id=63058074]
+scroll_offset = Vector2(0, 22)
+repeat_size = Vector2(643.575, 0)
+repeat_times = 3
+
+[node name="Firework" parent="Background/ParallaxBackground4" unique_id=1350121637 instance=ExtResource("3_sf4er")]
+position = Vector2(317.74304, 192)
+scale = Vector2(0.67266506, 0.67266506)
 
 [node name="ParallaxBackground2" type="Parallax2D" parent="Background" unique_id=1152384062]
 scroll_scale = Vector2(0.6, 0.6)
@@ -122,19 +123,13 @@ scale = Vector2(2.3632464, 2.3632464)
 player = NodePath("../../Entities/player")
 
 [node name="FireworkPath" parent="Obstacles" unique_id=1374713156 node_paths=PackedStringArray("trigger", "player") instance=ExtResource("16_wqb3b")]
-position = Vector2(1970, 416)
+position = Vector2(3192, 745)
 trigger = NodePath("Area2D")
 player = NodePath("../../Entities/player")
 
 [node name="Area2D" type="Area2D" parent="Obstacles/FireworkPath" unique_id=166962314]
+position = Vector2(-696, -433)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacles/FireworkPath/Area2D" unique_id=721140618]
-position = Vector2(-457, -205)
+position = Vector2(3, 5)
 shape = SubResource("WorldBoundaryShape2D_3f5hn")
-
-[node name="lag" type="TextureRect" parent="." unique_id=105395648]
-offset_left = -1999.0
-offset_top = -96.0
-offset_right = -999.0
-offset_bottom = 904.0
-texture = ExtResource("9_0kw8b")

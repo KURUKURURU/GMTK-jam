@@ -60,7 +60,7 @@ func _physics_process(delta: float) -> void:
 			direction = 0
 
 		# all conditions to slide
-		if Input.is_action_just_pressed("slide") and is_on_floor() and Input.is_action_pressed("shift") and not is_sliding:
+		if Input.is_action_just_pressed("slide") and is_on_floor() and not is_sliding:
 			is_sliding = true
 			slide_timer = SLIDE_DURATION
 			# Slide in the direction the player is moving, or facing if stationary

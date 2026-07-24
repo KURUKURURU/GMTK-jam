@@ -1,12 +1,8 @@
 [gd_scene format=3 uid="uid://cbqxeuwcebbk8"]
 
 [ext_resource type="Script" uid="uid://ma7aa7v461i6" path="res://scenes/fragile_box.gd" id="1_375d8"]
-[ext_resource type="Texture2D" uid="uid://c1p3uy5tc86sr" path="res://img/tileset/tileatlas1 copy.png" id="1_kpsea"]
+[ext_resource type="Texture2D" uid="uid://byeo1teb6djdq" path="res://img/box.png" id="2_ln0mq"]
 [ext_resource type="AudioStream" uid="uid://dfcid38mu0wih" path="res://sfx/boxbreak.wav" id="3_ln0mq"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_0cdmt"]
-atlas = ExtResource("1_kpsea")
-region = Rect2(98.946075, 67.18316, 32.81317, 30.636162)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rxf60"]
 size = Vector2(32, 30)
@@ -18,7 +14,8 @@ size = Vector2(42, 40)
 script = ExtResource("1_375d8")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=424719767]
-texture = SubResource("AtlasTexture_0cdmt")
+scale = Vector2(0.49295363, 0.49295363)
+texture = ExtResource("2_ln0mq")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=745049738]
 shape = SubResource("RectangleShape2D_rxf60")

@@ -36,5 +36,5 @@ func _process(delta: float) -> void:
 
 func cameraUpdate():
 	var pos = get_local_mouse_position()
-	if pos.x >= -250 and pos.x < 250:
+	if pos.x >= -400 and pos.x < 400:
 		set_position(pos)

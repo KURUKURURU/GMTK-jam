@@ -61,9 +61,12 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("24_px4r3")
+}, {
+"duration": 1.0,
 "texture": ExtResource("7_w7nhl")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"stop",
 "speed": 5.0
 }, {
@@ -302,13 +305,14 @@ texture = ExtResource("1_r0s1c")
 position = Vector2(59, 54)
 sprite_frames = SubResource("SpriteFrames_rxf60")
 autoplay = "default"
-frame_progress = 0.8902618
+frame_progress = 0.8792541
 
 [node name="talk" type="AnimatedSprite2D" parent="." unique_id=785416111]
 position = Vector2(59, 54)
 sprite_frames = SubResource("SpriteFrames_3f5hn")
-animation = &"talk"
-frame_progress = 0.6243497
+animation = &"stop"
+frame = 1
+frame_progress = 1.0
 
 [node name="bubble" type="Node2D" parent="." unique_id=296457930]
 position = Vector2(48, 44)
