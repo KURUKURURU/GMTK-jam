@@ -1,6 +1,6 @@
 extends Node2D
 @onready var progress_bar: ProgressBar = $ProgressBar
-@export var next_scene_path: String = "res://scenes/city_level.tscn"
+@export var next_scene_path: String = "res://scenes/start_menu.tscn"
 
 var progress: Array[float] = []
 

@@ -26,9 +26,9 @@ func _process(delta: float) -> void:
 		advance.emit()
 
 func _talk(message:= "...", talking:= true, prompted:= true, first_play := false):
+	label.text = ""
 	bubble.show()
 	advance_.hide()
-	label.text = ""
 	
 	if first_play:
 		animation.play("open")

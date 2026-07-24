@@ -285,9 +285,9 @@ _data = {
 script = ExtResource("1_kpkxt")
 
 [node name="basec2" type="NinePatchRect" parent="." unique_id=649733157]
-offset_left = 18.0
+offset_left = 77.0
 offset_top = 13.0
-offset_right = 58.0
+offset_right = 117.0
 offset_bottom = 53.0
 scale = Vector2(1.9761226, 1.9761226)
 texture = ExtResource("1_r0s1c")
@@ -302,20 +302,20 @@ scale = Vector2(1.7714041, 1.7714041)
 texture = ExtResource("1_r0s1c")
 
 [node name="base" type="AnimatedSprite2D" parent="." unique_id=457390248]
-position = Vector2(59, 54)
+position = Vector2(118, 54)
 sprite_frames = SubResource("SpriteFrames_rxf60")
 autoplay = "default"
-frame_progress = 0.8792541
+frame_progress = 0.9052074
 
 [node name="talk" type="AnimatedSprite2D" parent="." unique_id=785416111]
-position = Vector2(59, 54)
+position = Vector2(118, 54)
 sprite_frames = SubResource("SpriteFrames_3f5hn")
 animation = &"stop"
 frame = 1
 frame_progress = 1.0
 
 [node name="bubble" type="Node2D" parent="." unique_id=296457930]
-position = Vector2(48, 44)
+position = Vector2(107, 44)
 
 [node name="MarginContainer" type="MarginContainer" parent="bubble" unique_id=1504429760]
 custom_minimum_size = Vector2(95, 0)
@@ -363,17 +363,16 @@ position = Vector2(223, 0)
 stream = ExtResource("33_0s4sc")
 
 [node name="advance?" type="RichTextLabel" parent="bubble" unique_id=893668038]
-visible = false
 clip_contents = false
-offset_left = 56.000015
-offset_top = 27.0
-offset_right = 295.5904
-offset_bottom = 86.304565
+offset_left = 421.99997
+offset_top = 3.000002
+offset_right = 661.59033
+offset_bottom = 62.304565
 scale = Vector2(0.42155278, 0.42155278)
 theme = ExtResource("31_iul0n")
 theme_override_colors/default_color = Color(1, 1, 1, 1)
-theme_override_constants/outline_size = 4
+theme_override_constants/outline_size = 24
 theme_override_font_sizes/normal_font_size = 34
-text = "press \"Q\""
+text = "(click)"
 
 [node name="animation_whole" type="AnimationPlayer" parent="." unique_id=318688128]
