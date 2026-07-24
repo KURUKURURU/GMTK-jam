@@ -8,7 +8,7 @@
 
 [sub_resource type="Curve2D" id="Curve2D_llyc2"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, -416, -103, 36.24614, 93.94767, -36.24614, -93.94767, -491, -136, -76.70787, 181.93707, 76.70787, -181.93707, -513, -647, 0, 0, 0, 0, -213, -1024, 0, 0, 0, 0, -5, -1314, 0, 0, 0, 0, 183, -1713)
+"points": PackedVector2Array(0, 0, 0, 0, -284, 90, 101.88277, 52.816673, -101.88277, -52.816673, -323, -612, 165.48477, 10.076721, -165.48477, -10.076721, -2378, -724, 0, 0, 0, 0, -2044, -1371, 0, 0, 0, 0, -1167, -2143, 0, 0, 0, 0, -369, -3522)
 }
 point_count = 6
 
@@ -23,8 +23,8 @@ script = ExtResource("1_llyc2")
 loop_path = false
 
 [node name="PathFollow2D" type="PathFollow2D" parent="." unique_id=314058472]
-position = Vector2(-193.57048, -360.88208)
-rotation = -1.4915953
+position = Vector2(-304.94818, -322.44058)
+rotation = -1.9492898
 progress = 419.24478
 
 [node name="firework" parent="PathFollow2D" unique_id=2008544330 instance=ExtResource("2_oji1l")]

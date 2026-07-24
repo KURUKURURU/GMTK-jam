@@ -11,20 +11,20 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	
 	if Input.is_action_just_pressed("enlarge"):
-		zoom.x += 0.05
-		zoom.y += 0.05
+		zoom.x += 0.5
+		zoom.y += 0.5
 		
-		if zoom.x > 2.0:
-			zoom.x = 2.0
-			zoom.y = 2.0
+	if zoom.x > 2.0:
+		zoom.x = 2.0
+		zoom.y = 2.0
 		
 	if Input.is_action_just_pressed("shrink"):
-		zoom.x -= 0.05
-		zoom.y -= 0.05
+		zoom.x -= 0.5
+		zoom.y -= 0.5
 		
-		if zoom.x < 1.0:
-			zoom.x = 1.0
-			zoom.y = 1.0
+	if zoom.x < 0.50:
+		zoom.x = 0.50
+		zoom.y = 0.50
 	
 	if "dead" in player:
 		if not player.dead:

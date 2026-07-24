@@ -4,11 +4,12 @@
 [ext_resource type="Script" uid="uid://cefga8mapg2s8" path="res://scenes/city_level.gd" id="1_dpnyc"]
 [ext_resource type="Texture2D" uid="uid://chawdxrl1hoe4" path="res://img/tileset/2/Day/1.png" id="1_duytb"]
 [ext_resource type="PackedScene" uid="uid://cxyjhliuu3400" path="res://scenes/player.tscn" id="1_jolhp"]
-[ext_resource type="Texture2D" uid="uid://b4ovyi2adnpl6" path="res://img/tileset/2/Day/2.png" id="2_leqrd"]
-[ext_resource type="Texture2D" uid="uid://cguhvg4dpt3qg" path="res://img/tileset/2/Day/3.png" id="3_0kw8b"]
 [ext_resource type="PackedScene" uid="uid://3701rcla4520" path="res://scenes/firework.tscn" id="3_sf4er"]
-[ext_resource type="Texture2D" uid="uid://dr1tq206ktj3h" path="res://img/tileset/2/Night/4.png" id="4_dpnyc"]
-[ext_resource type="Texture2D" uid="uid://cbygbdtetnpk1" path="res://img/tileset/2/Night/5.png" id="5_2fprk"]
+[ext_resource type="Texture2D" uid="uid://d0cio0rl0vpwe" path="res://img/bg/1.png" id="4_yejta"]
+[ext_resource type="Texture2D" uid="uid://4ht1cdw57akn" path="res://img/bg/2.png" id="5_wqb3b"]
+[ext_resource type="Texture2D" uid="uid://c88qgq4rb7lm3" path="res://img/bg/3.png" id="6_belta"]
+[ext_resource type="Texture2D" uid="uid://c5hkeo6lq5ctl" path="res://img/bg/light.png" id="6_wqb3b"]
+[ext_resource type="Texture2D" uid="uid://dror2hwtc2n0a" path="res://img/bg/4.png" id="7_3jwe6"]
 [ext_resource type="Script" uid="uid://7f1d467og1qs" path="res://scenes/camera_2d.gd" id="7_leqrd"]
 [ext_resource type="AudioStream" uid="uid://075rtd4i6142" path="res://sfx/second.wav" id="8_pasw1"]
 [ext_resource type="AudioStream" uid="uid://lblvu4kaiqwt" path="res://sfx/action_seth_ms.wav" id="8_uhmcg"]
@@ -28,6 +29,7 @@ script = ExtResource("1_dpnyc")
 [node name="Background" type="Node2D" parent="." unique_id=102767683]
 
 [node name="ParallaxBackground" type="Parallax2D" parent="Background" unique_id=857658925]
+modulate = Color(0.012617188, 0.012617188, 0.012617188, 1)
 scroll_offset = Vector2(0, 22)
 repeat_size = Vector2(576, 324)
 repeat_times = 5
@@ -42,44 +44,77 @@ repeat_size = Vector2(643.575, 0)
 repeat_times = 3
 
 [node name="Firework" parent="Background/ParallaxBackground4" unique_id=1350121637 instance=ExtResource("3_sf4er")]
-position = Vector2(317.74304, 192)
+position = Vector2(317.74304, 96.45502)
 scale = Vector2(0.67266506, 0.67266506)
 
 [node name="ParallaxBackground2" type="Parallax2D" parent="Background" unique_id=1152384062]
-scroll_scale = Vector2(0.6, 0.6)
-scroll_offset = Vector2(0, 257.545)
+modulate = Color(0.29422846, 0.29422846, 0.29422846, 1)
+scale = Vector2(1.2297451, 1.2297451)
+scroll_scale = Vector2(0.1, 0.1)
+scroll_offset = Vector2(-6, 423)
 repeat_size = Vector2(643.575, 0)
 repeat_times = 2
 
 [node name="2" type="Sprite2D" parent="Background/ParallaxBackground2" unique_id=1460253992]
 position = Vector2(317.74304, 179.98045)
 scale = Vector2(1.1171633, 1.1171633)
-texture = ExtResource("2_leqrd")
+texture = ExtResource("4_yejta")
 
 [node name="ParallaxBackground3" type="Parallax2D" parent="Background" unique_id=179018007]
-scroll_scale = Vector2(0.7, 0.7)
-scroll_offset = Vector2(0, 257.545)
+modulate = Color(0.29422846, 0.29422846, 0.29422846, 1)
+scale = Vector2(1.2297451, 1.2297451)
+scroll_scale = Vector2(0.3, 0.3)
+scroll_offset = Vector2(-6, 431)
 repeat_size = Vector2(643.575, 0)
 repeat_times = 2
 
 [node name="3" type="Sprite2D" parent="Background/ParallaxBackground3" unique_id=1905607845]
 position = Vector2(317.74304, 179.98045)
 scale = Vector2(1.1171633, 1.1171633)
-texture = ExtResource("3_0kw8b")
+texture = ExtResource("5_wqb3b")
 
-[node name="4" type="Sprite2D" parent="Background/ParallaxBackground3" unique_id=976211355]
+[node name="ParallaxBackground5" type="Parallax2D" parent="Background" unique_id=953030074]
+modulate = Color(0.29422846, 0.29422846, 0.29422846, 1)
+scale = Vector2(1.2297451, 1.2297451)
+scroll_scale = Vector2(0.49, 0.49)
+scroll_offset = Vector2(-6, 448)
+repeat_size = Vector2(643.575, 0)
+repeat_times = 2
+
+[node name="PointLight2D" type="PointLight2D" parent="Background/ParallaxBackground5" unique_id=668681076]
+visible = false
+position = Vector2(582.2345, 676.82495)
+scale = Vector2(2.1600878, 2.7436676)
+energy = 3.53
+texture = ExtResource("6_wqb3b")
+
+[node name="4" type="Sprite2D" parent="Background/ParallaxBackground5" unique_id=855594782]
 position = Vector2(317.74304, 179.98045)
 scale = Vector2(1.1171633, 1.1171633)
-texture = ExtResource("4_dpnyc")
+texture = ExtResource("6_belta")
 
-[node name="5" type="Sprite2D" parent="Background/ParallaxBackground3" unique_id=48298551]
+[node name="ParallaxBackground6" type="Parallax2D" parent="Background" unique_id=1519645651]
+modulate = Color(0.29422846, 0.29422846, 0.29422846, 1)
+scale = Vector2(1.2297451, 1.2297451)
+scroll_scale = Vector2(0.7, 0.7)
+scroll_offset = Vector2(-6, 426)
+repeat_size = Vector2(643.575, 0)
+repeat_times = 2
+
+[node name="5" type="Sprite2D" parent="Background/ParallaxBackground6" unique_id=471121906]
 position = Vector2(317.74304, 179.98045)
 scale = Vector2(1.1171633, 1.1171633)
-texture = ExtResource("5_2fprk")
+texture = ExtResource("7_3jwe6")
 
 [node name="Parallax2D" type="Parallax2D" parent="Background" unique_id=503098747]
 repeat_size = Vector2(1000, 0)
 repeat_times = 4
+
+[node name="ColorRect" type="ColorRect" parent="Background/Parallax2D" unique_id=1715703216]
+offset_top = 1258.0
+offset_right = 1430.0
+offset_bottom = 2299.0
+color = Color(0, 0, 0, 1)
 
 [node name="floor" type="TileMapLayer" parent="Background/Parallax2D" unique_id=1910782473]
 position = Vector2(0, -103.99999)
@@ -127,7 +162,12 @@ tile_map_data = PackedByteArray("AAABAAcAAgAAAAAAAAACAAcAAgABAAAAAAADAAcAAgABAAA
 tile_set = ExtResource("1_3ugmh")
 
 [node name="Spike" parent="Obstacles" unique_id=1985350207 node_paths=PackedStringArray("player") instance=ExtResource("15_yejta")]
-position = Vector2(411, 319)
+position = Vector2(544, 319)
+scale = Vector2(2.3632464, 2.3632464)
+player = NodePath("../../Entities/player")
+
+[node name="Spike2" parent="Obstacles" unique_id=673667768 node_paths=PackedStringArray("player") instance=ExtResource("15_yejta")]
+position = Vector2(1116, 501)
 scale = Vector2(2.3632464, 2.3632464)
 player = NodePath("../../Entities/player")
 
@@ -136,12 +176,12 @@ position = Vector2(1434, 185)
 player = NodePath("../../Entities/player")
 
 [node name="FireworkPath" parent="Obstacles" unique_id=1374713156 node_paths=PackedStringArray("trigger", "player") instance=ExtResource("16_wqb3b")]
-position = Vector2(3340, 766)
+position = Vector2(4508, 980)
 trigger = NodePath("Area2D")
 player = NodePath("../../Entities/player")
 
 [node name="Area2D" type="Area2D" parent="Obstacles/FireworkPath" unique_id=166962314]
-position = Vector2(-696, -433)
+position = Vector2(-1668, -322)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacles/FireworkPath/Area2D" unique_id=721140618]
 position = Vector2(3, 5)

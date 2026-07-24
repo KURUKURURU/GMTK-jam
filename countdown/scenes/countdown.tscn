@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://q3u2dav3difo"]
+
+[ext_resource type="Script" uid="uid://cfhgesp717eeg" path="res://countdown.gd" id="1_c4awr"]
+[ext_resource type="FontFile" uid="uid://b3royi6nnuly2" path="res://ft/fs-ti-92-eno-c.ttf" id="2_c4awr"]
+
+[node name="Countdown" type="CanvasLayer" unique_id=742822670]
+script = ExtResource("1_c4awr")
+
+[node name="label" type="RichTextLabel" parent="." unique_id=81021249]
+offset_left = 505.0
+offset_right = 722.93335
+offset_bottom = 107.34033
+scale = Vector2(0.61486673, 0.61486673)
+theme_override_constants/outline_size = 19
+theme_override_fonts/normal_font = ExtResource("2_c4awr")
+theme_override_font_sizes/normal_font_size = 44
+text = "-1:20"
+horizontal_alignment = 1
+vertical_alignment = 1
