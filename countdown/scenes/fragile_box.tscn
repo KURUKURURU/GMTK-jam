@@ -4,23 +4,30 @@
 [ext_resource type="Texture2D" uid="uid://byeo1teb6djdq" path="res://img/box.png" id="2_ln0mq"]
 [ext_resource type="AudioStream" uid="uid://dfcid38mu0wih" path="res://sfx/boxbreak.wav" id="3_ln0mq"]
 
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ln0mq"]
+rough = true
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rxf60"]
 size = Vector2(32, 30)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ln0mq"]
 size = Vector2(42, 40)
 
-[node name="FragileBox" type="StaticBody2D" unique_id=462074755]
+[node name="FragileBox" type="RigidBody2D" unique_id=1216207647]
+physics_material_override = SubResource("PhysicsMaterial_ln0mq")
+can_sleep = false
 script = ExtResource("1_375d8")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=424719767]
-scale = Vector2(0.49295363, 0.49295363)
+scale = Vector2(1.0898464, 1.0898464)
 texture = ExtResource("2_ln0mq")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=745049738]
+scale = Vector2(2.2108495, 2.2108495)
 shape = SubResource("RectangleShape2D_rxf60")
 
 [node name="break" type="AudioStreamPlayer2D" parent="." unique_id=519974647]
+scale = Vector2(2.2108495, 2.2108495)
 stream = ExtResource("3_ln0mq")
 volume_db = 7.704
 max_distance = 315.0
@@ -28,6 +35,7 @@ attenuation = 3.6050048
 panning_strength = 3.0
 
 [node name="Area2D" type="Area2D" parent="." unique_id=415245414]
+scale = Vector2(2.2108495, 2.2108495)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=2073775925]
 shape = SubResource("RectangleShape2D_ln0mq")

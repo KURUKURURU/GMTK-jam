@@ -1,4 +1,4 @@
-extends StaticBody2D
+extends PhysicsBody2D
 @onready var collision_shape: CollisionShape2D = $CollisionShape2D2
 @onready var sprite: Sprite2D = $Sprite2D
 @onready var __break: AudioStreamPlayer2D = $break

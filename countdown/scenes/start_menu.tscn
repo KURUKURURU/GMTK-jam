@@ -31,7 +31,9 @@
 [ext_resource type="Texture2D" uid="uid://bwepvqg6lwxty" path="res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0020.tres" id="23_nb6vh"]
 [ext_resource type="Texture2D" uid="uid://pdt601h3e8lt" path="res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0021.tres" id="24_kjdkq"]
 [ext_resource type="Texture2D" uid="uid://c5wki4og8ql4p" path="res://img/CHARACTERS/pear/TALK.sprites/Timeline 1_0022.tres" id="25_42ie4"]
+[ext_resource type="Texture2D" uid="uid://cygsj828v70ql" path="res://img/debuginator.png" id="29_4ra0d"]
 [ext_resource type="Texture2D" uid="uid://dwdcdc8nb8yfr" path="res://img/pearscreen.png" id="30_bsr6t"]
+[ext_resource type="Texture2D" uid="uid://1dwnqb1hiano" path="res://img/times_square.png" id="30_ul6wr"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_inobp"]
 animations = [{
@@ -208,6 +210,121 @@ tracks/6/keys = {
 "values": [false]
 }
 
+[sub_resource type="Animation" id="Animation_np3gv"]
+resource_name = "debugger"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.23),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [null, ExtResource("29_4ra0d")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TextureRect:size")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.23),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1920, 1080)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TextureRect:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.23),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(231, 127)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("TextureRect:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.23),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.089458115, 0.15703537)]
+}
+
+[sub_resource type="Animation" id="Animation_n4mi7"]
+resource_name = "final"
+length = 6.0666666
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_h61rw")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TextureRect:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.965, 0.965)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TextureRect:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(138, 2)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("TextureRect:size")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(373.04504, 372)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ColorRect:color")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+
 [sub_resource type="Animation" id="Animation_u4qax"]
 resource_name = "newyears"
 tracks/0/type = "value"
@@ -217,10 +334,10 @@ tracks/0/path = NodePath("TextureRect:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0.5),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ExtResource("6_nxjfj")]
+"values": [null, ExtResource("6_nxjfj")]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -232,7 +349,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0.5),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(135.67, 37.62)]
+"values": [Vector2(96, 38)]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -241,10 +358,73 @@ tracks/2/path = NodePath("TextureRect:size")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0.5),
+"times": PackedFloat32Array(0.5, 0.51),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(525, 372), Vector2(525, 372)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("TextureRect:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.51),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(525, 372)]
+"values": [Vector2(0.86748844, 0.86748844)]
+}
+
+[sub_resource type="Animation" id="Animation_4ra0d"]
+resource_name = "newyearsday"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.46),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [null, ExtResource("30_ul6wr")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TextureRect:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.46),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.30112875, 0.30112875)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TextureRect:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.46),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(39.000004, 29.000004)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("TextureRect:size")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.46),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1920, 1080)]
 }
 
 [sub_resource type="Animation" id="Animation_bt8j4"]
@@ -441,7 +621,10 @@ tracks/3/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_4v6gu"]
 _data = {
 &"RESET": SubResource("Animation_h61rw"),
+&"debugger": SubResource("Animation_np3gv"),
+&"final": SubResource("Animation_n4mi7"),
 &"newyears": SubResource("Animation_u4qax"),
+&"newyearsday": SubResource("Animation_4ra0d"),
 &"pearintro": SubResource("Animation_bt8j4"),
 &"pickup": SubResource("Animation_fcv5n"),
 &"waybackworm": SubResource("Animation_5byqq")

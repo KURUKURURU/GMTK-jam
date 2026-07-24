@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Countdown"
-run/main_scene="uid://cyvgyfjj0q4qc"
+run/main_scene="uid://bbe4w1wnr8j0y"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 Pear="*uid://bbr4vpey20bhe"
 Global="*uid://cdcf86j1kskkx"
+Loading="*uid://cyvgyfjj0q4qc"
 
 [display]
 
