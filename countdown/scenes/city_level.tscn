@@ -44,7 +44,7 @@ repeat_size = Vector2(643.575, 0)
 repeat_times = 3
 
 [node name="Firework" parent="Background/ParallaxBackground4" unique_id=1350121637 instance=ExtResource("3_sf4er")]
-position = Vector2(317.74304, 96.45502)
+position = Vector2(295.00003, -24.545013)
 scale = Vector2(0.67266506, 0.67266506)
 
 [node name="ParallaxBackground2" type="Parallax2D" parent="Background" unique_id=1152384062]
@@ -53,7 +53,7 @@ scale = Vector2(1.2297451, 1.2297451)
 scroll_scale = Vector2(0.1, 0.1)
 scroll_offset = Vector2(-6, 423)
 repeat_size = Vector2(643.575, 0)
-repeat_times = 2
+repeat_times = 5
 
 [node name="2" type="Sprite2D" parent="Background/ParallaxBackground2" unique_id=1460253992]
 position = Vector2(317.74304, 179.98045)
@@ -66,7 +66,7 @@ scale = Vector2(1.2297451, 1.2297451)
 scroll_scale = Vector2(0.3, 0.3)
 scroll_offset = Vector2(-6, 431)
 repeat_size = Vector2(643.575, 0)
-repeat_times = 2
+repeat_times = 5
 
 [node name="3" type="Sprite2D" parent="Background/ParallaxBackground3" unique_id=1905607845]
 position = Vector2(317.74304, 179.98045)
@@ -79,7 +79,7 @@ scale = Vector2(1.2297451, 1.2297451)
 scroll_scale = Vector2(0.49, 0.49)
 scroll_offset = Vector2(-6, 448)
 repeat_size = Vector2(643.575, 0)
-repeat_times = 2
+repeat_times = 5
 
 [node name="PointLight2D" type="PointLight2D" parent="Background/ParallaxBackground5" unique_id=668681076]
 visible = false
@@ -99,7 +99,7 @@ scale = Vector2(1.2297451, 1.2297451)
 scroll_scale = Vector2(0.7, 0.7)
 scroll_offset = Vector2(-6, 426)
 repeat_size = Vector2(643.575, 0)
-repeat_times = 2
+repeat_times = 5
 
 [node name="5" type="Sprite2D" parent="Background/ParallaxBackground6" unique_id=471121906]
 position = Vector2(317.74304, 179.98045)
@@ -148,7 +148,7 @@ pitch_scale = 0.55
 position = Vector2(244, 133)
 
 [node name="Camera2D" type="Camera2D" parent="Entities/player" unique_id=1785494743 node_paths=PackedStringArray("player")]
-position = Vector2(129, -63)
+position = Vector2(234, -63)
 position_smoothing_enabled = true
 script = ExtResource("7_leqrd")
 player = NodePath("..")
