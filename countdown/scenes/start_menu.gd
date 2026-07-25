@@ -10,6 +10,7 @@ extends Node2D
 func _ready() -> void:
 	pickup.show()
 	Pear.hide()
+	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -62,3 +63,9 @@ func _on_pickup_pressed() -> void:
 	
 	animation.play("final")
 	Loading.start_threaded_load("res://scenes/city_level.tscn")
+
+
+func start_game() -> void:
+	$buttons.hide()
+	ringing.play()
+	$pickup.show()

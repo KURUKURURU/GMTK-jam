@@ -3,7 +3,16 @@
 [ext_resource type="FontFile" uid="uid://bsment3btfgc1" path="res://ft/PixelAE-Bold.ttf" id="1_o3j8j"]
 [ext_resource type="FontFile" uid="uid://du5t6iggpynxf" path="res://ft/PixelAE-Regular.ttf" id="2_w38bq"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n4mi7"]
+bg_color = Color(4.457422, 2.9800663, 2.021782, 0.101960786)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3f5hn"]
+
 [resource]
+Button/fonts/font = ExtResource("2_w38bq")
+Button/styles/hover = SubResource("StyleBoxFlat_n4mi7")
+Button/styles/normal = SubResource("StyleBoxEmpty_3f5hn")
+Button/styles/pressed = SubResource("StyleBoxEmpty_3f5hn")
 RichTextLabel/colors/default_color = Color(0, 0, 0, 1)
 RichTextLabel/font_sizes/normal_font_size = 10
 RichTextLabel/fonts/bold_font = ExtResource("1_o3j8j")
