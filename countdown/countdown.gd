@@ -1,5 +1,6 @@
 extends CanvasLayer
 @onready var label: RichTextLabel = $label
+@onready var tick: AudioStreamPlayer2D = $tick
 
 var minutes 
 var seconds 
@@ -37,6 +38,7 @@ func countdown(time):
 		
 		label.text = str(minutes) + ":" + add + str(seconds)
 		await Global.wait(1.0)
+		tick.play()
 		seconds -= 1
 		
 	print("timer done!")

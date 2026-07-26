@@ -54,7 +54,8 @@ script = ExtResource("1_rhpnd")
 
 [node name="trail" type="GPUParticles2D" parent="." unique_id=1584548666]
 material = SubResource("CanvasItemMaterial_xwatn")
-position = Vector2(56, 41)
+position = Vector2(381.99997, -7.000002)
+scale = Vector2(0.5639683, 0.5639683)
 amount = 5
 sub_emitter = NodePath("../blast")
 texture = SubResource("GradientTexture2D_750n0")

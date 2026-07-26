@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cfhgesp717eeg" path="res://countdown.gd" id="1_c4awr"]
 [ext_resource type="FontFile" uid="uid://b3royi6nnuly2" path="res://ft/fs-ti-92-eno-c.ttf" id="2_c4awr"]
+[ext_resource type="AudioStream" uid="uid://dwnyip7qs1o8q" path="res://sfx/tick.wav" id="3_0xc00"]
 
 [node name="Countdown" type="CanvasLayer" unique_id=742822670]
 script = ExtResource("1_c4awr")
@@ -17,3 +18,7 @@ theme_override_font_sizes/normal_font_size = 44
 text = "-1:20"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="tick" type="AudioStreamPlayer2D" parent="." unique_id=1730973161]
+position = Vector2(580, 37)
+stream = ExtResource("3_0xc00")

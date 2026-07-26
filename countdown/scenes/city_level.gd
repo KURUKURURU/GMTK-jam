@@ -11,8 +11,8 @@ func _ready() -> void:
 	Pear.show()
 	await Pear._talk("Welcome to the City, Agent Apple.")
 	
-	Countdown.countdown(10)
-	await Countdown.completed
+	#Countdown.countdown(10)
+	#await Countdown.completed
 	
 	print("midnight!")
 	fireworks.show()
