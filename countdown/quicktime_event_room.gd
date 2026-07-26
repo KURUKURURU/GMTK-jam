@@ -6,10 +6,15 @@ extends StaticBody2D
 
 @onready var close_coll: CollisionShape2D = $door_close/c_coll
 @onready var open_coll: CollisionShape2D = $door_open/o_coll
-@onready var loop: AnimationPlayer = $loop
-@onready var img: TextureRect = $loop/TextureRect
+@onready var loop: AnimationPlayer = $TextureRect/loop
+@onready var img: TextureRect = $TextureRect
 
 @export var player : CharacterBody2D
+@onready var yay: AudioStreamPlayer = $yay
+@onready var unlock: AudioStreamPlayer = $unlock
+
+
+var played := false
 
 signal advance
 
@@ -21,19 +26,30 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	
+	#if Input.is_action_pressed("Q"):
+		#if loop.current_animation != "hold":
+			
+	
 	if Input.is_action_just_pressed("Q"):
 		loop.play("hold")
+		await Global.wait(0.1)
 		advance.emit()
 
 func quicktime():
 	
+	if played:
+		return
+		
 	loop.play("click")
 	var random = randi_range(5,10)
 	
 	for i in range(random):
 		loop.play("click")
 		await advance
-		
+		unlock.play()
+	
+	yay.play()
+	played = true
 	return
 
 func close_door(closed : bool):
@@ -41,12 +57,12 @@ func close_door(closed : bool):
 		true: 
 			door_close.show()
 			door_open.hide()
-			open_coll.disabled = true
+			close_coll.disabled = false
 			return
 		false: 
 			door_close.hide()
 			door_open.show()
-			open_coll.disabled = false
+			close_coll.disabled = true
 			return
 
 
